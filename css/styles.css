@@ -22,3 +22,9 @@ h1 {
 .card-deck {
 	padding: 50px 50px 50px 50px;
 }
+form{
+	background-color: maroon;
+	color: white;
+	padding: 10px;
+	border-radius: 5px;
+  }
