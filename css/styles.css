@@ -1,7 +1,7 @@
 nav {
 	font-family: monospace;
 	z-index: 10;
-	margin-top: 50px;
+	margin-top: 30px;
 	margin-right: 30px;
 }
 
@@ -22,12 +22,23 @@ h1 {
 .card-deck {
 	padding: 50px 50px 50px 50px;
 }
-form{
-	background-color: maroon;
+form {
+	background-color: #FC766A;
 	color: white;
 	padding: 10px;
 	border-radius: 5px;
-  }
-  .container{
-	  margin-bottom: 100px;
-  }
+}
+.container {
+	margin-bottom: 50px;
+}
+body {
+	background-color: darkslategray;
+}
+
+.container {
+	background-color: dimgrey;
+	font-style: oblique;
+}
+ .card-deck{
+	background-color: darkslategray;
+ }
