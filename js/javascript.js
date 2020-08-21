@@ -13,8 +13,7 @@ function getAkanName() {
   var day = parseInt(
     (CC / 4 - 2 * CC - 1 + (5 * YY) / 4 + (26 * (MM + 1)) / 10 + DD) % 7
   );
-
-  if (gender == "Gender") {
+if (gender == "Gender") {
     alert("Please select gender!!!");
   } else if (gender == "Female") {
     alert("Your Ghanaian name equivalent is " + akanFemaleNames[day]);
