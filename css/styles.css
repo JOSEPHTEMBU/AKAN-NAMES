@@ -16,3 +16,9 @@ li:hover {
 	background: #008c76ff;
 	cursor: pointer;
 }
+h1{
+    text-align: center;
+}
+.card-deck {
+    padding: 50px 50px 50px 50px;
+}
