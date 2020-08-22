@@ -11,71 +11,82 @@
 </head>
 
 <body>
-    <nav role="navigation">
-        <ul>
-            <li><a href="index.html">ABOUT</a></li>
-            <li><a href="flex.html">FLEX-BOX</a></li>
-        </ul>
-    </nav>
+    <div class="nav-bar">
+        <nav role="navigation">
+            <ul>
+                <li><a class="btn-primary" href="index.html">HOME</a></li>
+                <li><a class="btn-primary" href="flex.html">FLEX-BOX</a></li>
+            </ul>
+        </nav>
+    </div>
+
     <div class="top">
         <div class="container">
             <div class="jumbotron">
-                <div class="jumbotron">
-                    <h1 class="display-4">AKAN NAMES</h1>
-                    <p class="lead"> The Akan people of Ghana frequently name their children after the day of the week
-                        they were born and the order in which they were born. This is calculates and shows what your
-                        name would be according to the
-                        Ghanian culture.As a culture this is a key tradition and it is believed to bring blessings
-                        according to
-                        culture and tradition names.</p>
-                    <p>Akan names are derived from Ghanian culture. Frequently in Ghana, children are given their first
-                        name as a 'day name' which corresponds to the day in the week they were born. Here are Ghanian
-                        day names.</p>
-                    <p>Male Names</p>
-                    <ul>
-                        <li>Sunday: Kwasi</li>
-                        <li>Monday: Kwadwo</li>
-                        <li>Tuesday: Kwabena</li>
-                        <li>Wednesday: Kwaku</li>
-                        <li>Thursday: Yaw</li>
-                        <li>Friday: Kofi</li>
-                        <li>Saturday: Kwame</li>
-                    </ul>
-                    <br>
-                    <p>Female Names</p>
-                    <ul>
-                        <li>Sunday: Akosua</li>
-                        <li>Monday: Adwoa</li>
-                        <li>Tuesday: Abenaa</li>
-                        <li>Wednesday: Akua</li>
-                        <li>Thursday: Yaa</li>
-                        <li>Friday: Afua</li>
-                        <li>Saturday: Ama</li>
-                    </ul>
+                <h1 class="display-4">AKAN NAMES</h1>
+                <p class="lead"> The Akan people of Ghana frequently name their children after the day of the week
+                    they were born and the order in which they were born. Children are given
+                    their first
+                    name as a <span>day name</span> which corresponds to the day in the week they were born and
+                    their gender.</p>
+                <p class="lead"> </p>
+                <p>This application gets the day you were born from your date of birh and establishes the corresponding
+                    Ghanaian name based on gender. name would be ac. As a culture, this is a key tradition and it is
+                    believed to bring blessings.</p>
+                <p>
+                    Here are Ghanian
+                    day names.
+                </p>
+
+                <div class="row">
+                    <div class="col-md-5">
+                        <p>Male Names</p>
+                        <ul>
+                            <li>Sunday: Kwasi</li>
+                            <li>Monday: Kwadwo</li>
+                            <li>Tuesday: Kwabena</li>
+                            <li>Wednesday: Kwaku</li>
+                            <li>Thursday: Yaw</li>
+                            <li>Friday: Kofi</li>
+                            <li>Saturday: Kwame</li>
+                        </ul>
+                        <br>
+                        <p>Female Names</p>
+                        <ul>
+                            <li>Sunday: Akosua</li>
+                            <li>Monday: Adwoa</li>
+                            <li>Tuesday: Abenaa</li>
+                            <li>Wednesday: Akua</li>
+                            <li>Thursday: Yaa</li>
+                            <li>Friday: Afua</li>
+                            <li>Saturday: Ama</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-7">
+                        <h3>Get Your Akan Name</h3>
+                        <form onsubmit="getAkanName()">
+                            <div class="form-group">
+                                <label for="exampleFormControlInput1">Date Of Birth</label>
+                                <input type="date" class="form-control" id="date" required />
+                            </div>
+
+                            <div class="form-group">
+                                <label for="exampleFormControlSelect1">Gender</label>
+                                <select class="form-control" id="gender" required>
+                                    <option value="">...</option>
+                                    <option value="Male">Male</option>
+                                    <option value="Female">Female</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="btn btn-primary">
+                                Submit
+                            </button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="container">
-        <form>
-            <div class="form-group">
-                <label for="exampleFormControlInput1">Date Of Birth</label>
-                <input type="date" class="form-control" id="date" placeholder="name@example.com" required />
-            </div>
-
-            <div class="form-group">
-                <label for="exampleFormControlSelect1">Gender</label>
-                <select class="form-control" id="gender">
-                    <option>Gender</option>
-                    <option>Male</option>
-                    <option>Female</option>
-                </select>
-            </div>
-            <button type="submit" class="btn btn-primary" onclick="getAkanName()">
-                Submit
-            </button>
-        </form>
-    </div>
-    <script src="js/javascript.js"></script>
+  <script src="js/javascript.js"></script>
 </body>
 </html>
