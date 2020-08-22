@@ -10,8 +10,6 @@ nav {
 	margin-right: 30px;
 }
 
-
-
 nav > ul {
 	text-align: right;
 }
@@ -57,9 +55,6 @@ form {
 	margin-bottom: 50px;
 }
 
-.container {
-	/* font-style: oblique; */
-}
 .card-deck {
 	background-color: darkslategray;
 }
@@ -78,6 +73,22 @@ form {
 	object-fit: cover;
 }
 
-span{
+span {
 	font-weight: 1000;
+}
+table {
+	font-family: arial, sans-serif;
+	border-collapse: collapse;
+	width: 100%;
+}
+
+td,
+th {
+	border: 1px solid black;
+	text-align: left;
+	padding: 8px;
+}
+
+tr:nth-child(even) {
+	background-color: #dddddd;
 }
