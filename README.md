@@ -23,7 +23,9 @@ The Akan people of Ghana frequently name their children after the day of the wee
 - Extract it to a folder of your choice
 - In a text editor open the project's folder
 
-## BDD
+## Behaviour Driven Development (BDD)
+
+The application should output to the user their Akan name depending on their gender and the day they were born.
 
 | NAME    | DAY OF BIRTH |
 | ------- | ------------ |
